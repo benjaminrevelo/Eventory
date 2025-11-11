@@ -1,3 +1,4 @@
+import 'package:eventory/models/event.dart';
 import 'package:eventory/screens/home/event_card.dart';
 import 'package:eventory/shared/styled_button.dart';
 import 'package:eventory/shared/styled_text.dart';
@@ -12,7 +13,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
-  List events = ['shoes', 'food', 'drinks', 'dance', 'bar'];
+
 
 
   @override
@@ -24,7 +25,10 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             Expanded(
-              child: ListView.builder(
+              child: events.isEmpty 
+              ? const Center(child: StyledHeadline("It's quiet in here..."),
+              )
+              : ListView.builder(
                 itemCount: events.length,
                 itemBuilder:  (_, index){
                   return EventCard(events[index]);
