@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
-          children: [
+          children: [ 
             Expanded(
               child: events.isEmpty 
               ? const Center(child: StyledHeadline("It's quiet in here..."),

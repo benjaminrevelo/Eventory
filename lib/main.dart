@@ -1,9 +1,10 @@
+import 'package:eventory/screens/create/create.dart';
 import 'package:eventory/screens/home/home.dart';
 import 'package:eventory/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(theme: primaryTheme, home: Home()));
+  runApp(MaterialApp(theme: primaryTheme, home: const Create()));
 }
 
 //this sandbox widget is used to test ideas without affecting the main code
