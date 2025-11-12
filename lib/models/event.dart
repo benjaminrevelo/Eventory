@@ -3,7 +3,6 @@ class Event{
   //constructor
   Event({
     required this.id,
-    required this.userId,
     required this.name,
     required this.description,
     required this.location,
@@ -13,7 +12,6 @@ class Event{
   });
   //fields
   final String id;
-  final String userId; 
   final String name; 
   final String description; 
   final String location; 
@@ -32,13 +30,13 @@ class Event{
 //dummy event data
 
 List<Event> events = [
-  Event(id: '1', userId: 'Macdonalds', name: 'Double Cheeseburgers', 
+  Event(id: '1',name: 'Double Cheeseburgers', 
     description: 'Buy 1 cheeseburger get a second one for free.', 
     location: '2625 South Blvd, Charlotte, NC 28209',  time: DateTime.now()),
-    Event(id: '2', userId: 'TopGolf', name: 'Golf for free', 
+    Event(id: '2',name: 'Golf for free', 
     description: 'For every hour spent golfing you get a free additional hour', 
     location: '8024 Savoy Corporate Dr, Charlotte, NC 28273',  time: DateTime.now()),
-    Event(id: '3', userId: 'Compa Taco', name: 'Taco Tuesday', 
+    Event(id: '3', name: 'Taco Tuesday', 
     description: 'All tacos cost 1 lunch today 2:00', 
     location: '5710 South Blvd, Charlotte, NC 28217',  time: DateTime.now()),
 ];

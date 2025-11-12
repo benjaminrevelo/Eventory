@@ -18,7 +18,7 @@ class EventCard extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              StyledHeadline(event.userId),
+              //StyledHeadline(event.userId),
               StyledText(event.name)
             ],
           ),

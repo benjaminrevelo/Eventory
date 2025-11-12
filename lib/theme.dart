@@ -54,4 +54,12 @@ ThemeData primaryTheme = ThemeData(
     shadowColor: Colors.transparent,
     margin: const EdgeInsets.only(bottom: 16),
   ),
+  //inopu decoration theme
+  inputDecorationTheme: InputDecorationTheme(
+    filled: true,
+    fillColor: AppColors.secondaryColor,
+    border: OutlineInputBorder(gapPadding: BorderSide.strokeAlignCenter),
+    labelStyle: TextStyle(color: AppColors.textColor),
+    prefixIconColor: AppColors.textColor,
+  )
 );
