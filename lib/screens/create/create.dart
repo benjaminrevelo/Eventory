@@ -1,4 +1,5 @@
 import 'package:eventory/models/event.dart';
+import 'package:eventory/screens/home/home.dart';
 import 'package:eventory/shared/styled_button.dart';
 import 'package:eventory/shared/styled_text.dart';
 import 'package:eventory/theme.dart';
@@ -131,6 +132,9 @@ class _CreateState extends State<Create> {
         time: _eventDateTime!,
       ),
     );
+    Navigator.push(context, MaterialPageRoute(
+      builder: (ctx) => const Home(),
+    ));
 
     // TODO: Save to database here (e.g., Hive, SQLite, Firebase);
   }

@@ -1,4 +1,5 @@
 import 'package:eventory/models/event.dart';
+import 'package:eventory/screens/create/create.dart';
 import 'package:eventory/screens/home/event_card.dart';
 import 'package:eventory/shared/styled_button.dart';
 import 'package:eventory/shared/styled_text.dart';
@@ -35,7 +36,11 @@ class _HomeState extends State<Home> {
                 },
               ),
             ),
-            StyledButton(onPressed: () {}, child: const StyledHeadline('Post an Event')),
+            StyledButton(onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder:  (ctx) => const Create()
+              ));
+            }, child: const StyledHeadline('Post an Event')),
           ],
         ),
       ),
