@@ -1,4 +1,5 @@
 import 'package:eventory/models/event.dart';
+import 'package:eventory/screens/event_info/event_info.dart';
 import 'package:eventory/shared/styled_text.dart';
 import 'package:eventory/theme.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,11 @@ class EventCard extends StatelessWidget {
             icon: Icon(Icons.favorite, color: AppColors.textColor),
             ),
           IconButton(
-            onPressed: (){}, 
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(
+                builder: (ctx) => EventInfo(event: event),
+                ));
+            }, 
             icon: Icon(Icons.arrow_forward_sharp, color: AppColors.textColor),
             )
         ],

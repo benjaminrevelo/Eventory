@@ -4,7 +4,7 @@ import 'package:eventory/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(theme: primaryTheme, home: const Create()));
+  runApp(MaterialApp(theme: primaryTheme, home: const Home()));
 }
 
 //this sandbox widget is used to test ideas without affecting the main code
